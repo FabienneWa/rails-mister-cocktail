@@ -2,3 +2,10 @@
 @import "alert";
 @import "avatar";
 @import "navbar";
+@import "card";
+
+.container {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}

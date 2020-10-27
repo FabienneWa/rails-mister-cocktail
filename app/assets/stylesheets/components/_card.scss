@@ -1,0 +1,27 @@
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-auto-rows: 100px;
+}
+
+.card-category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 250px;
+  background-size: cover;
+  background-position: center;
+  font: Arial, sans-serif;
+  color: white;
+}
+
+.card-category a {
+  font: Arial, sans-serif;
+  color: white;
+  &:hover {
+    color: grey;
+    text-decoration: none;
+  }
+}

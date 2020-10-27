@@ -1,2 +1,16 @@
 // Import page-specific CSS files here.
 @import "home";
+@import "show";
+
+h1 {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.banner {
+  diplay: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: cover;
+  height: 200px;
+}
