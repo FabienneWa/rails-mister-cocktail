@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container container-show">
 
   <h2 class="detail-page"><%= @cocktail.name %></h2>
   <% if @cocktail.photo.attached? %>
@@ -19,8 +19,22 @@
     <% end %>
   </ul>
 
-<%= link_to "add Dose", new_cocktail_dose_path(@cocktail) %>
-<%= link_to "Add Pic", new_cocktail_dose_path(@cocktail) %>
-<%= link_to "back to menu", cocktails_path  %>
+  <div class="container container-btn">
+    <%= link_to "add Dose", new_cocktail_dose_path(@cocktail), class: "btn btn-dark" %>
+    <%= link_to "Add Pic", new_cocktail_dose_path(@cocktail), class: "btn btn-dark" %>
+    <%= link_to "back to menu", cocktails_path, class: "btn btn-dark"  %>
+    <%= link_to "add Review", new_cocktail_review_path(@cocktail), class: "btn btn-dark"  %>
+
+  </div>
+
+  <div class="review-selection">
+    <h2>Reviews:</h2>
+    <% @cocktail.reviews.each do |review| %>
+      <p> <%= review.name %> <br>
+      Review: <br> <%= review.content %> <br>
+      Rating <%= review.rating %> </p>
+
+    <% end %>
+  </div>
 
 </div>

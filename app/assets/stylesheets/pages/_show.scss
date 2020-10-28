@@ -4,8 +4,15 @@ h2.detail-page {
   text-align: center;
 }
 
-.container {
+.container.container-show {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
+}
+
+.container.container-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
